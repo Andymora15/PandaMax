@@ -1,0 +1,113 @@
+/* MODO OSCURO POR DEFECTO */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* MODO CLARO */
+body.light-mode {
+    background-color: #f2f2f2;
+    color: #000000;
+}
+
+/* Header y nav */
+header {
+    background-color: #1c1c1c;
+    color: #00f0ff;
+    padding: 20px;
+    text-align: center;
+}
+body.light-mode header {
+    background-color: #e0e0e0;
+    color: #0077aa;
+}
+
+nav {
+    background-color: #00f0ff;
+    padding: 10px;
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+nav li {
+    display: inline;
+    margin: 0 15px;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+body.light-mode nav {
+    background-color: #bdf4ff;
+}
+
+/* Main y aside */
+main {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 20px;
+    gap: 30px;
+}
+aside {
+    width: 30%;
+    background-color: #1e1e1e;
+    padding: 15px;
+    border-radius: 10px;
+}
+body.light-mode aside {
+    background-color: #ffffff;
+}
+
+#content {
+    width: 70%;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,255,255,0.15);
+}
+body.light-mode #content {
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+}
+
+/* Footer */
+footer {
+    background-color: #1c1c1c;
+    color: #00f0ff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+footer .social img {
+    width: 40px;
+    margin: 0 10px;
+    vertical-align: middle;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+body.light-mode footer {
+    background-color: #e0e0e0;
+    color: #0077aa;
+}
+
+/* Botón de cambio de tema */
+#toggle-theme {
+    background-color: #00f0ff;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+#toggle-theme:hover {
+    background-color: #00c4cc;
+}
